@@ -1,0 +1,32 @@
+LEGENDS VOTE - KURULUM
+======================
+
+1) Bu zip'i bir klasore cikar (ornek: C:\LegendsVote)
+2) .env.example dosyasini .env olarak kopyala
+3) .env dosyasini not defteri ile ac ve doldur:
+
+   LEGENDS_USER=kullanici_adin
+   LEGENDS_PASS=sifren
+
+4) LegendsVote.exe cift tikla
+   - Chrome acilir, 4 sekme gelir
+   - Windows bildirimi gorunur
+   - Sen kutucuklari isaretle ve oylari ver
+
+OTOMATIK BASLATMA (PC acildiginda)
+----------------------------------
+1) Win+R -> shell:startup yaz -> Enter
+2) Acilan klasore LegendsVote.exe'nin kisayolunu koy:
+   - LegendsVote.exe'ye sag tik -> Kisayol olustur
+   - Olusan kisayolu shell:startup klasorune tasi
+   - Kisayola sag tik -> Ozellikler -> Hedef sonuna su ekle: --watch
+
+   Ornek hedef:
+   "C:\LegendsVote\LegendsVote.exe" --watch
+
+SORUN GIDERME
+-------------
+- Log dosyalari: logs\ klasorunde (gunluk)
+- Chrome acilmiyor: Chrome kurulu mu?
+- "env eksik" hatasi: .env dosyasi var mi, doldurulmus mu?
+- Cloudflare cikiyor: kutucugu elle isaretle
