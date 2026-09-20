@@ -1,43 +1,100 @@
-# Legends Vote
+# \# Legends Vote
 
-Günde bir kez, belirlenen saatte Legends Online oy sayfasını açar ve 4 oy sitesini
-sekme olarak hazırlar. Sen kutucukları tıklayıp oyları verirsin.
+# 
 
-## \## Gereksinimler
+# Legends Online için günlük oy hatırlatıcı. Belirlenen saatte giriş yapar ve
 
-## 
+# 4 oy sitesini sekme olarak açar.
 
-## \- Windows 10/11
+# 
 
-## \- Python 3.11+
+# \*\*Bot doğrulaması aşılmaz.\*\* Cloudflare, ALTCHA, reCAPTCHA çıkarsa sen elle
 
-## \- \[uv](https://docs.astral.sh/uv/getting-started/installation/)
+# geçersin.
 
-## \- Google Chrome
+# 
 
-## 
+# \## İndir \& Çalıştır
 
-## \## Kurulum (kullanicilar icin)
+# 
 
-## 
+# 1\. \[Releases](../../releases) sayfasından \*\*LegendsVote-v1.0.0.zip\*\* indir.
 
-## 1\. Bu repoyu indir (Code -> Download ZIP) ve bir klasore cikar.
+# 2\. Zip'i bir klasöre çıkar (örn. `C:\\\\LegendsVote`).
 
-## 2\. `.env.example` dosyasini `.env` olarak kopyala.
+# 3\. `.env.example` dosyasını `.env` olarak kopyala.
 
-## 3\. `.env` icine \*\*kendi\*\* Legends Online kullanici adi ve sifreni yaz.
+4\. `.env` içine Legends Online kullanıcı adı ve şifreni yaz:
 
-## 4\. PowerShell ac, klasore gel:
+LEGENDS\_USER=kullanici\_adin
+===
 
-## &#x20;  ```powershell
+LEGENDS\_PASS=sifren
 
-## &#x20;  cd legends-vote
+5. `LegendsVote.exe` çift tıkla — Chrome açılır, 4 sekme gelir.
+===
 
-## &#x20;  uv sync
+# 
 
-## &#x20;  uv run playwright install chrome
+# PC her açıldığında arka planda otomatik çalışır. Her gün saat 20:00'de
 
-## &#x20;  powershell -ExecutionPolicy Bypass -File .\\build\_exe.ps1
+# bildirim gelir, sekmeler açılır.
 
-## &#x20;  powershell -ExecutionPolicy Bypass -File .\\install\_startup.ps1
+# 
+
+# \## Kaldırma
+
+# 
+
+# \- \*\*Startup'tan çıkar:\*\* `shell:startup` klasörünü aç (Win+R), `LegendsVote.lnk`
+
+# kısayolunu sil.
+
+# \- \*\*Klasörü sil:\*\* `C:\\LegendsVote` klasörünü sil.
+
+# 
+
+# \## Sık Sorulan
+
+# 
+
+# \*\*Saat kaçta çalışıyor?\*\* 20:00. Değiştirmek istersen kaynak koddan derle
+
+# (`vote\_app.py` → `DAILY\_HOUR`).
+
+# 
+
+# \*\*Aynı gün ikinci kez çalışır mı?\*\* Hayır. Bir kez çalışınca o gün tekrar
+
+# tetiklenmez.
+
+# 
+
+# \*\*Chrome açılıyor ama sekmeler gelmiyor?\*\* `.env` dosyasında kullanıcı adı
+
+# ve şifre doğru mu kontrol et. `logs\\` klasöründeki bugünün log dosyasına bak.
+
+# 
+
+# \*\*Cloudflare çıkıyor?\*\* Kutucuğu elle işaretle. Araç doğrulamayı aşmaz.
+
+# 
+
+# \## Uyarı
+
+# 
+
+# Bu araç yalnızca kişisel kullanım içindir. Oy sitelerinin ve Legends Online'ın
+
+# kullanım şartlarına uymak \*\*senin sorumluluğundadır\*\*. `.env` dosyanı kimseyle
+
+# paylaşma.
+
+# 
+
+# \## Lisans
+
+# 
+
+# MIT
 
