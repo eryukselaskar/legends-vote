@@ -1,0 +1,13 @@
+.env
+.env.local
+*.env
+profile/
+chrome-profile/
+logs/
+state.json
+dist/
+build/
+*.spec
+__pycache__/
+*.pyc
+.venv/
